@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('./bg.jpg');
+    font-family: 'Spline Sans', sans-serif;
+}
+
+.header{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 20px auto;
+}
+.logo{
+    font-size: 2rem;
+}
+.logo h1{
+    font-weight: bold;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+}
+.header_left b{
+    font-size: 1.2rem;
+}
+.header_left p{
+    background: #884C5E;
+    margin: 0 15px;
+    padding: 4px 30px;
+    border-radius: 5px;
+}
+
+.line{
+    height: 3px;
+    width: 20px;
+    margin: 3px 0;
+    background: #884C5E;
+}
+@media screen and (max-width:520px){
+    .header_left b{
+        font-size: 0.8rem;
+    }
+    .header_left p{
+        margin: 0 8px;
+        padding: 4px 15px;
+    }
+}
+
+.form{
+    background: #F0EEE9;
+    color: #884C5E;
+    width: 30%;
+    border-radius: 15px;
+    position: absolute;
+    right: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fl{
+    margin: 25px 0 15px 0;
+}
+.form section{
+    width: 90%;
+}
+.form b{
+    font-size: 2rem;
+    margin: 10px 0 5px 0;
+}
+@media screen and (max-width:720px){
+    .form b{
+        font-size: 1.5rem;
+    }
+}
+.form p{
+    font-size: 0.8rem;
+    margin: 5px 60px 10px 0;
+}
+.form p b{
+    font-size: 0.8rem;
+    border-bottom: 1px solid #884C5E;
+    margin-left: 5px;
+}
+@media screen and (max-width:720px) {
+    .form{
+        width: 85%;
+    }
+    .form section b{
+        font-size: 1.4rem;
+    }
+    .form p{
+        font-size: 0.7rem;
+    }
+    .form p b{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:520px){
+
+}
+input{
+    padding: 15px 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.form img{
+    height: 20px;
+    margin-right: 15px;
+}
+@media screen and (max-width:720px){
+    input{
+        padding: 15px 20px;
+    }
+}
+#name{
+    width: 45%;
+    border: 1px solid #DBD5D1;
+}
+form div{
+    margin: 3px 5%;
+    width: 100%;
+}
+#mail{
+    width: 90.4%;
+    margin: 3px 5%;
+    border: 1px solid #DBD5D1;
+}
+form section{
+    border: 1px solid #DBD5D1;
+    background: #fff;
+    margin: 3px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90.4%;
+    border-radius: 8px;
+}
+
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+.checkbox label{
+    font-size: 0.6rem;
+    color: #000;
+    margin-left: 5px;
+}
+
+.checkbox a{
+    border-bottom: 1px solid #000;
+}
+
+button{
+    background: #884C5E;
+    color: #F0EEE9;
+    border: none;
+    width: 90%;
+    margin: 3px 5%;
+    font-size: 0.8rem;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.other_method{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    margin: 7px auto;
+}
+.other_method p{
+    margin: 0 11px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.other_method .line{
+    height: 1px;
+    width: 20%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    margin-bottom: 15px;
+}
+.buttons img{
+    margin: 0 11px;
+}
+.buttons p{
+    margin: 0;
+}
+.buttons li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2A83FB;
+    font-weight: bold;
+    background: #fff;
+    width: 48%;
+    padding: 10px 0px;
+    border-radius: 8px;
+}
+@media screen and (max-width: 720px) {
+    .buttons li{
+        padding: 10px 20px;
+        justify-content: center;
+    }
+}
