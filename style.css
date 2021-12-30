@@ -7,6 +7,8 @@
 body{
     background: url('./bg.jpg');
     background-size: cover;
+    background-repeat:   no-repeat;
+    /* background-position: center center; */
     font-family: 'Spline Sans', sans-serif;
 }
 
@@ -50,6 +52,24 @@ body{
         padding: 4px 15px;
     }
 }
+@media screen and (min-width:1920px){
+    .logo img{
+        height: 50px;
+    }
+    .header_left b{
+        font-size: 2rem;
+    }
+    .header_left p{
+        padding: 10px 30px;
+        margin: 0 25px;
+    }
+    .line{
+        height: 5px;
+        width: 35px;
+        margin: 7px 0;
+        background: #884C5E;
+    }
+}
 
 .form{
     background: #F0EEE9;
@@ -57,35 +77,49 @@ body{
     width: 30%;
     border-radius: 15px;
     position: absolute;
+    margin-top: 2%;
     right: 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-#fl{
-    margin: 25px 0 15px 0;
+.form_logo{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 .form section{
     width: 90%;
+    margin: 15px auto;
 }
 .form b{
     font-size: 2rem;
     margin: 10px 0 5px 0;
 }
+
 @media screen and (max-width:720px){
     .form b{
         font-size: 1.5rem;
     }
 }
 .form p{
-    font-size: 0.8rem;
-    margin: 5px 60px 10px 0;
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: 540;
 }
 .form p b{
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-bottom: 1px solid #884C5E;
     margin-left: 5px;
+}
+@media screen and (min-width:1920px) {
+    .form b{
+        font-size: 3rem;
+    }
+    .form p{
+        font-size: 1.5rem;
+    }
+    .form p b{
+        font-size: 1.5rem;
+    }
 }
 @media screen and (max-width:720px) {
     .form{
@@ -111,6 +145,12 @@ input{
     border: none;
     outline: none;
 }
+
+@media screen and (min-width:1920px){
+    input{
+        padding: 35px;
+    }
+}
 .form img{
     height: 20px;
     margin-right: 15px;
@@ -121,11 +161,17 @@ input{
     }
 }
 #name{
-    width: 45%;
+    width: 43%;
+    margin-right: 12px;
     border: 1px solid #DBD5D1;
 }
+@media screen and (min-width:1920px){
+    #name{
+        margin-right: 18px;
+    }
+}
 form div{
-    margin: 3px 5%;
+    margin: 15px 5%;
     width: 100%;
 }
 #mail{
@@ -150,9 +196,14 @@ form section{
     align-items: center;
 }
 .checkbox label{
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     color: #000;
     margin-left: 5px;
+}
+@media screen and (min-width:1920px){
+    .checkbox label{
+        font-size: 1.2rem;
+    }
 }
 
 .checkbox a{
@@ -169,13 +220,19 @@ button{
     padding: 15px;
     border-radius: 10px;
 }
+@media screen and (min-width:1920px){
+    button{
+        padding: 30px;
+        font-size: 1.5rem;
+    }
+}
 
 .other_method{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 65%;
-    margin: 7px auto;
+    width: 55%;
+    margin: 10px auto;
 }
 .other_method p{
     margin: 0 11px;
@@ -184,7 +241,7 @@ button{
 }
 .other_method .line{
     height: 1px;
-    width: 20%;
+    width: 25%;
 }
 
 .buttons{
@@ -215,5 +272,10 @@ button{
     .buttons li{
         padding: 10px 20px;
         justify-content: center;
+    }
+}
+@media screen and (min-width:1920px){
+    .buttons li{
+        padding: 30px 0;
     }
 }
